@@ -1,17 +1,15 @@
-//
-//  LovebirdsApp.swift
-//  Lovebirds
-//
-//  Created by Norman Bui on 2023-09-21.
-//
-
 import SwiftUI
+import Firebase
 
 @main
 struct LovebirdsApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AuthView()
         }
     }
 }

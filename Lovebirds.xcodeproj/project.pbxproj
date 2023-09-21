@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		7CD1C3C92ABC37F7005CDCC3 /* LovebirdsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD1C3C82ABC37F7005CDCC3 /* LovebirdsApp.swift */; };
-		7CD1C3CB2ABC37F7005CDCC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD1C3CA2ABC37F7005CDCC3 /* ContentView.swift */; };
 		7CD1C3CD2ABC37F7005CDCC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD1C3CC2ABC37F7005CDCC3 /* Assets.xcassets */; };
 		7CD1C3D02ABC37F7005CDCC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD1C3CF2ABC37F7005CDCC3 /* Preview Assets.xcassets */; };
+		7CD1C3D82ABC3AD5005CDCC3 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD1C3D72ABC3AD5005CDCC3 /* AuthView.swift */; };
+		7CD1C3DA2ABC3B69005CDCC3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD1C3D92ABC3B69005CDCC3 /* AuthService.swift */; };
+		7CDBEBB42ABC4889005B2BC6 /* SpotifyiOS in Frameworks */ = {isa = PBXBuildFile; productRef = 7CDBEBB32ABC4889005B2BC6 /* SpotifyiOS */; };
+		7CDBEBB62ABC4A24005B2BC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CDBEBB52ABC4A23005B2BC6 /* GoogleService-Info.plist */; };
+		7CDBEBB92ABC4B86005B2BC6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7CDBEBB82ABC4B86005B2BC6 /* FirebaseAnalytics */; };
+		7CDBEBBB2ABC4B86005B2BC6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7CDBEBBA2ABC4B86005B2BC6 /* FirebaseAuth */; };
+		7CDBEBBD2ABC4B86005B2BC6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7CDBEBBC2ABC4B86005B2BC6 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7CD1C3C52ABC37F7005CDCC3 /* Lovebirds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lovebirds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD1C3C82ABC37F7005CDCC3 /* LovebirdsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovebirdsApp.swift; sourceTree = "<group>"; };
-		7CD1C3CA2ABC37F7005CDCC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7CD1C3CC2ABC37F7005CDCC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CD1C3CF2ABC37F7005CDCC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7CD1C3D72ABC3AD5005CDCC3 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		7CD1C3D92ABC3B69005CDCC3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		7CDBEBB52ABC4A23005B2BC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CDBEBB92ABC4B86005B2BC6 /* FirebaseAnalytics in Frameworks */,
+				7CDBEBBD2ABC4B86005B2BC6 /* FirebaseFirestore in Frameworks */,
+				7CDBEBBB2ABC4B86005B2BC6 /* FirebaseAuth in Frameworks */,
+				7CDBEBB42ABC4889005B2BC6 /* SpotifyiOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,8 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				7CD1C3C82ABC37F7005CDCC3 /* LovebirdsApp.swift */,
-				7CD1C3CA2ABC37F7005CDCC3 /* ContentView.swift */,
 				7CD1C3CC2ABC37F7005CDCC3 /* Assets.xcassets */,
+				7CDBEBB52ABC4A23005B2BC6 /* GoogleService-Info.plist */,
+				7CD1C3D62ABC3AA4005CDCC3 /* Authentication */,
 				7CD1C3CE2ABC37F7005CDCC3 /* Preview Content */,
 			);
 			path = Lovebirds;
@@ -65,6 +78,15 @@
 				7CD1C3CF2ABC37F7005CDCC3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7CD1C3D62ABC3AA4005CDCC3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				7CD1C3D72ABC3AD5005CDCC3 /* AuthView.swift */,
+				7CD1C3D92ABC3B69005CDCC3 /* AuthService.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +105,12 @@
 			dependencies = (
 			);
 			name = Lovebirds;
+			packageProductDependencies = (
+				7CDBEBB32ABC4889005B2BC6 /* SpotifyiOS */,
+				7CDBEBB82ABC4B86005B2BC6 /* FirebaseAnalytics */,
+				7CDBEBBA2ABC4B86005B2BC6 /* FirebaseAuth */,
+				7CDBEBBC2ABC4B86005B2BC6 /* FirebaseFirestore */,
+			);
 			productName = Lovebirds;
 			productReference = 7CD1C3C52ABC37F7005CDCC3 /* Lovebirds.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +139,10 @@
 				Base,
 			);
 			mainGroup = 7CD1C3BC2ABC37F7005CDCC3;
+			packageReferences = (
+				7CDBEBB22ABC4889005B2BC6 /* XCRemoteSwiftPackageReference "ios-sdk" */,
+				7CDBEBB72ABC4B86005B2BC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 7CD1C3C62ABC37F7005CDCC3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +159,7 @@
 			files = (
 				7CD1C3D02ABC37F7005CDCC3 /* Preview Assets.xcassets in Resources */,
 				7CD1C3CD2ABC37F7005CDCC3 /* Assets.xcassets in Resources */,
+				7CDBEBB62ABC4A24005B2BC6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CD1C3CB2ABC37F7005CDCC3 /* ContentView.swift in Sources */,
 				7CD1C3C92ABC37F7005CDCC3 /* LovebirdsApp.swift in Sources */,
+				7CD1C3D82ABC3AD5005CDCC3 /* AuthView.swift in Sources */,
+				7CD1C3DA2ABC3B69005CDCC3 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +371,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7CDBEBB22ABC4889005B2BC6 /* XCRemoteSwiftPackageReference "ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/spotify/ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		7CDBEBB72ABC4B86005B2BC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7CDBEBB32ABC4889005B2BC6 /* SpotifyiOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CDBEBB22ABC4889005B2BC6 /* XCRemoteSwiftPackageReference "ios-sdk" */;
+			productName = SpotifyiOS;
+		};
+		7CDBEBB82ABC4B86005B2BC6 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CDBEBB72ABC4B86005B2BC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		7CDBEBBA2ABC4B86005B2BC6 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CDBEBB72ABC4B86005B2BC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		7CDBEBBC2ABC4B86005B2BC6 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CDBEBB72ABC4B86005B2BC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7CD1C3BD2ABC37F7005CDCC3 /* Project object */;
 }
